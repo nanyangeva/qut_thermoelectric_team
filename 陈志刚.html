@@ -1,33 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Responsive Navbar</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Welcome to Our School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #004972;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .banner {
+            width: 100%; /* Full width of the container */
+            height: 500px; /* Fixed height */
+            object-fit: cover; /* Ensure the image covers the area */
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #004972;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .sidebar button:hover {
+            background-color: #45a049;
+        }
+        .content {
+            flex: 3;
+            margin-left: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-<nav>
-    <!-- Checkbox for toggling menu -->
-    <input type="checkbox" id="check">
-    <!-- Menu icon -->
-    <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
-    <!-- Site logo -->
-    <label class="logo">CodingNepal</label>
-    <!-- Navigation links -->
-    <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Feedback</a></li>
-    </ul>
-</nav>
-<!-- Section for image -->
-<section></section>
+
+<header>
+    <h1>昆士兰科技大学热电材料与器件课题组</h1>
+</header>
+
+<img src="昆士兰科技大学.jpg" alt="School Banner" class="banner">
+
+<div class="container">
+    <div class="sidebar">
+        <button onclick="alert('Admissions')">学校介绍</button>
+        <button onclick="alert('Academics')">陈志刚 教授</button>
+        <button onclick="alert('Extracurricular')">史晓磊 博士</button>
+        <button onclick="alert('Events')">刘伟迪 博士</button>
+        <button onclick="alert('Events')">李 濛 博士</button>
+        <button onclick="alert('Events')">吕婉玉 博士</button>
+        <button onclick="alert('Contact Us')">联系我们</button>
+    </div>
+    <div class="content">
+        <h2>个人简介</h2>
+        <p>陈志刚教授，澳大利亚碳中和零排放发电中心主任，澳大利亚昆士兰科技大学讲席教授 （Capacity Building Professor in Energy Materials），能源学科首席科学家,昆士兰大学和南昆士兰大学荣誉教授。长期从事功能材料在能量转化的基础和应用研究。博士毕业后前往澳大利亚昆士兰大学机械与矿业学院工作，先后担任研究员，高级研究员，荣誉副教授，荣誉教授，后转入南昆士兰大学担任副教授（2016）和教授（2018）。目前是昆士兰科技大学能源学科讲席教授 （Capacity Building Professor in Energy Materials，2021）。先后主持共计五千万澳元的科研项目，共指导20名博士生和29名硕士研究生，其中已毕业博士生17名和硕士生30名。在Nat. Energy、Nat. Nanotech.、 Nat. Sustainability.、Chem. Rev. 、Prog. Mater. Sci.、 Adv. Mater.、 J. Am. Chem. Soc.、Angew. Chem. In. Ed. 等国际学术期刊上发表460余篇学术论文，被Scopus引用35000余次，h-index达101，是科睿唯安“高被引科学家” （2019-2022）和全球top2%科学家（2019-2023，Elsevier BV）。国际知名期刊Journal of Materials Science and Technology和Exploration副编辑，国际期刊Materials Today Energy，Energy Materials Advances，Progress in Natural Science，Journal of Advanced Ceramics，Rare Metals，Microstructures，EcoEnergy等编委。</p>
+        <p>个人主页：https://www.qut.edu.au/about/our-people/academic-profiles/zhigang.chen</p>
+    </div>
+</div>
+
 </body>
 </html>
